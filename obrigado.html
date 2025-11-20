@@ -4,71 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado! - Brownie do Henrique</title>
-    
-    <!-- Mesmas fontes e estilos do site principal -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brownie: {
-                            light: '#fbe9d5',
-                            soft: '#f9f1e4',
-                            brown: '#9f5129',
-                            dark: '#a05e36',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Nunito', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="shortcut icon" href="public/images/Logo - Favicon.png">
+    <style>body { font-family: 'Nunito', sans-serif; }</style>
 </head>
-<body class="bg-brownie-light min-h-screen flex items-center justify-center p-4">
-
-    <div class="bg-brownie-soft max-w-lg w-full rounded-3xl shadow-2xl p-8 md:p-12 text-center border-2 border-brownie-brown/10 relative overflow-hidden">
-        
-        <!-- Decoração de fundo -->
-        <div class="absolute top-0 left-0 w-full h-2 bg-brownie-brown"></div>
-        
-        <!-- Ícone Animado -->
+<body class="bg-[#fbe9d5] min-h-screen flex items-center justify-center p-4">
+    <div class="bg-[#f9f1e4] max-w-lg w-full rounded-3xl shadow-2xl p-8 text-center border-2 border-[#9f5129]/10 relative">
         <div class="mx-auto w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 animate-bounce">
             <i data-lucide="check" class="w-10 h-10 text-green-600"></i>
         </div>
-
-        <h1 class="text-3xl md:text-4xl font-bold text-brownie-brown mb-4">
-            Obrigado pelo Feedback! 🍪
-        </h1>
-        
-        <p class="text-lg text-brownie-brown/80 mb-8 leading-relaxed">
-            Recebemos sua mensagem com sucesso. <br>
-            Ficamos muito felizes em saber sua opinião, isso nos ajuda a deixar o brownie cada vez mais gostoso!
-        </p>
-
-        <div class="flex flex-col gap-3">
-            <a href="index.html" class="inline-flex items-center justify-center w-full rounded-full bg-brownie-brown px-8 py-4 text-lg font-bold text-white shadow transition-transform hover:scale-105 hover:bg-brownie-dark focus:outline-none">
-                <i data-lucide="arrow-left" class="mr-2 h-5 w-5"></i>
-                Voltar para o Site
-            </a>
-            
-            <a href="https://www.instagram.com/browniedo.henrique" target="_blank" class="inline-flex items-center justify-center w-full rounded-full bg-white px-8 py-4 text-lg font-bold text-brownie-brown border-2 border-brownie-brown/20 shadow-sm transition-colors hover:bg-brownie-light focus:outline-none">
-                <i data-lucide="instagram" class="mr-2 h-5 w-5"></i>
-                Seguir no Instagram
-            </a>
-        </div>
+        <h1 class="text-3xl font-bold text-[#9f5129] mb-4">Obrigado pelo Feedback! 🍪</h1>
+        <p class="text-lg text-[#9f5129]/80 mb-8">Recebemos sua mensagem com sucesso. Ficamos felizes com sua opinião!</p>
+        <a href="index.html" class="inline-flex items-center justify-center w-full rounded-full bg-[#9f5129] px-8 py-4 text-lg font-bold text-white hover:bg-[#a05e36] transition-all mb-3">Voltar para o Site</a>
     </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
